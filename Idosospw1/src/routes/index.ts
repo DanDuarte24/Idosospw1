@@ -28,6 +28,7 @@ router.delete("/users/:id", authMiddleware, UserController.delete);
 router.post("/requests", authMiddleware, RequestController.create);
 router.get("/requests", RequestController.getAll);
 router.get("/requests/:id", RequestController.getById);
+router.get("/requests/idoso/:idosoId", RequestController.getByIdosoId);
 router.put("/requests/:id", authMiddleware, RequestController.update);
 router.delete("/requests/:id", authMiddleware, RequestController.delete);
 
